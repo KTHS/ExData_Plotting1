@@ -2,7 +2,7 @@ library(sqldf)
 library(lubridate)
 
 #Uploading data with use of sqldf package
-hpc<-read.csv.sql("household_power_consumption.txt",sql="select * from file where Date = '1/2/2007' OR  Date = '2/2/2007'",header=TRUE,sep=";",nrow=1000)
+hpc<-read.csv.sql("household_power_consumption.txt",sql="select * from file where Date = '1/2/2007' OR  Date = '2/2/2007'",header=TRUE,sep=";")
 head(hpc,10)
 
 #formating table columns
